@@ -71,3 +71,13 @@ ytag({
     })(window, document, "clarity", "script", "6gc4w9snse");
 </script>
 <?php endif; ?>
+
+<!-- Global site tag (gtag.js) - Google Ads: 358173760 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-358173760"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-358173760');
+</script>

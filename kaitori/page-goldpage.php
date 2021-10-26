@@ -39,7 +39,7 @@
                         </p>
 
                         <p class="txt-txt">
-                            当ホームページ1位でご紹介しております「<a href="<?php echo home_url('/') ?>/link/gold.php" class="prrrr under"
+                            当ホームページ1位でご紹介しております「<a href="<?php echo home_url('/') ?>link/gold.php" class="prrrr under"
                                 target="_blank">ザ・ゴールド(THE GOLD)</a>」は、公式サイトの非常にわかりやすい箇所に実際の買取価格が大きく掲載されています。
                         </p>
 
@@ -73,7 +73,7 @@
                         <p class="txt-txt">それほど、着物買取に自信のある証拠です。
                         </p>
 
-                        <p class="txt-txt">高額買取を希望するなら「<a href="<?php echo home_url('/') ?>/link/gold.php" class="prrrr under"
+                        <p class="txt-txt">高額買取を希望するなら「<a href="<?php echo home_url('/') ?>link/gold.php" class="prrrr under"
                                 target="_blank">ザ・ゴールド(THE GOLD)</a>」に任せておけば安心です。
                         </p>
 
@@ -87,13 +87,13 @@
                         <p class="txt-txt">あなにとって「リスクは一切ありません！」ので、安心して利用してください。</p>
 
                         <div class="img-box-100p">
-                            <a href="<?php echo home_url('/') ?>/link/gold.php" class="prrrr under" target="_blank">
+                            <a href="<?php echo home_url('/') ?>link/gold.php" class="prrrr under" target="_blank">
                                 <img src="<?php bloginfo('template_url'); ?>/img/gold__page--img.jpg" alt="">
                             </a>
                         </div>
 
                         <div class="t-link">
-                            <a href="<?php echo home_url('/') ?>/link/gold.php" class="prrrr" target="_blank">
+                            <a href="<?php echo home_url('/') ?>link/gold.php" class="prrrr" target="_blank">
                                 <!-- <img src="" alt=""> -->
                                 <div class="btn">公式サイトはこちら</div>
                             </a>

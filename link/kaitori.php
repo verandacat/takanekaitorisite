@@ -1,6 +1,18 @@
 <html>
 <head>
+<!-- Global site tag (gtag.js) - Google Ads: 358173760 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-358173760"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-358173760');
+</script>
+<!-- Event snippet for 申し込み conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-358173760/6d4uCIq-hbQCEMCY5aoB'});
+</script>
 <script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
 <script>
 window.yjDataLayer = window.yjDataLayer || [];
