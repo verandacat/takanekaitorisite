@@ -4,9 +4,9 @@
     <?php include 'inc/bodytag.php'; ?>
 
 
-    <div id="container--main">
+    <div id="container">
 
-        <main id="main" class="sub">
+        <main id="main" class="sub main">
 
             <section class="sub-section section01">
                 <div class="subtitlebox">
@@ -222,6 +222,7 @@
 
 
         </main>
-
+        <?php get_sidebar('top'); ?>
+        
 
         <?php get_footer(); ?>

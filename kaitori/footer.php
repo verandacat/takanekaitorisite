@@ -1,7 +1,6 @@
  <!------------------------------------------------------------------------------------------------>
  
 
- <?php if(is_category() || is_page('test') || is_single()) : ?>
 
  </div><!-- #container END-->
 
@@ -14,20 +13,9 @@
  <!-- footer END -->
 
 
- <?php else : ?>
-
- <footer>
-    <a class="footer-link" href="<?php echo home_url('/category/column'); ?>">コラム一覧</a>
-     <a class="footer-link" href="<?php echo home_url('/unei'); ?>">運営者情報</a>
-     <a class="footer-link topBtn" href="<?php echo home_url('/'); ?>">TOPへ</a>
- </footer>
-
- <!-- footer END -->
-
  </div><!-- #container END-->
 
 
- <?php endif; ?>
 
 
  <script>

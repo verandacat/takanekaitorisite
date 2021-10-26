@@ -4,9 +4,9 @@
     <?php include 'inc/bodytag.php'; ?>
 
      
-    <div id="container--main">
+    <div id="container">
 
-        <main id="main">
+        <main id="main" class="main">
             <?php if ($browser == 'sp') : ?>
             <header>
                 <img src="<?php bloginfo('template_url'); ?>/img/sp-kimono-fv.jpg" alt="">
@@ -109,5 +109,7 @@
             </section>
             
         </main>
+        <?php get_sidebar('top'); ?>
+
        
        <?php get_footer(); ?>

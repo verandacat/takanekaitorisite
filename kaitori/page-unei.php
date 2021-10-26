@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <body>
-    <div id="container--main">
-        <main id="main">
+    <div id="container">
+        <main id="main" class="main">
             <h1 id="logo"><a href="<?php echo home_url('/'); ?>">HOME</a> > <?php the_title(); ?></h1>
 
             <?php 
@@ -13,6 +13,8 @@
             endif; 
             ?>
         </main>
+        <?php get_sidebar('top'); ?>
+
 
     </div>
     <?php get_footer(); ?>
