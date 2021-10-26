@@ -24,6 +24,8 @@ new WOW().init();
 
  <script src="<?php bloginfo('template_url'); ?>/js/storage.js">
  </script>
+ <script src="<?php bloginfo('template_url'); ?>/js/location.js">
+ </script>
 
 <?php if(is_page('kimono2')) : ?>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
