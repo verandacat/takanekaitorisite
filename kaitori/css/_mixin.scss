@@ -1,0 +1,226 @@
+@charset "UTF-8";
+// =====================================================
+// Mixin
+// =====================================================
+@import "_setting.scss";
+
+
+
+// ■■■■■■■■■■■■■■■■■■■■■■■ メディアクエリー ■■■■■■■■■■■■■■■■■■■■■■
+@mixin media($width-media: 768px) {
+    @media (max-width: $width-media) {
+        @content;
+    }
+}
+
+// ■■■■■■■■■■■■■■■■■■■■■■■ SP float banner ■■■■■■■■■■■■■■■■■■■■■■
+@mixin float {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-weight: bold;
+    bottom:0;
+    left:0;
+    z-index:999;
+    background: rgb(243, 241, 241);
+    padding: 3px;
+}
+
+
+// ■■■■■■■■■■■■■■■■■■■■■■■ clearFix ■■■■■■■■■■■■■■■■■■■■■■
+@mixin clearfix {
+    &::after {
+        content:"";
+        display: block;
+        clear: both;
+    }
+}
+
+// ■■■■■■■■■■■■■■■■■■■■■■■ box ■■■■■■■■■■■■■■■■■■■■■■
+@mixin sectionSpace {
+    margin: 10px;
+    padding: $space-20;
+    text: {
+        align: left;
+    }
+    line-height: 1.8em;
+    @include media {
+        margin: 5px 5px 20px 5px;
+        padding: 5px;
+        text-align: left;
+    }
+}
+
+$tmp: "";
+@for $i from 1 to 11 {
+    @if $i < 10 {
+        $tmp: "0#{$i}";
+    } @else {
+        $tmp: $i;
+    }
+    #section#{$tmp} {
+        @include sectionSpace;
+
+    }
+} 
+
+@mixin txtBox($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+    text-align: left;
+    // background: #f3e9e9;
+    border-radius: 30px;
+    border:2px solid pink;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+@mixin txtBoxSub($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+    text-align: left;
+    // background: rgba($gray, 0.1);
+    // box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+    @include media {
+        font-size: $font-psp;
+    }
+}
+
+// ■■■■■■■■■■■■■■■■■■■■■■■ ul, li ■■■■■■■■■■■■■■■■■■■■■■
+@mixin list {
+    &::before {
+        content: "\f14a";
+        font-family: FontAwesome;
+        color: pink;
+        font-size: 1.5em;
+        margin-right: 10px;
+    }
+}
+
+// ■■■■■■■■■■■■■■■■■■■■■■■ flex ■■■■■■■■■■■■■■■■■■■■■■
+@mixin flexBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+// ■■■■■■■■■■■■■■■■■■■■■■■ 見出し ■■■■■■■■■■■■■■■■■■■■■■
+@mixin titleBox1 {
+    font-weight: $txt-bold;
+    position: relative;
+    margin: 5px 0;
+    background: $white;
+    padding: 20px 0 20px 10px;
+    border : {
+        top: solid 4px rgba($red, .3);
+        bottom: solid 8px rgba($red, .3);
+        // radius:  0px 0px 160px 180px/0px 0px 20px 4px;
+    }
+    @include media {
+        margin: 10px 0;
+    }
+}
+
+@mixin titleBox2 {
+    font-weight: $txt-bold;
+    padding: 10px 0 10px 20px;
+    color: #fff;
+    background: #e94a4a;
+    // border: {
+    //     top: 3px dotted red;
+    //     bottom: 3px dotted red;
+    // }
+
+}
+
+// ■■■■■■■■■■■■■■■■■■■■■■■ background ■■■■■■■■■■■■■■■■■■■■■■
+
+@mixin bg01 {//和風
+    background-color:silver;
+    background-image:
+    radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+    background-size: 100px 50px;
+}
+
+@mixin bg02 {
+    background :
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+@mixin bg03 {
+    // background: #fceaea;
+    border:4px solid rgba(pink, 0.4);;
+}
+
+
+
+
+// ■■■■■■■■■■■■■■■■■■■■■■■ SP Link 矢印 ■■■■■■■■■■■■■■■■■■■■■■
+@mixin linkIcon($color: #444) {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        width: 10px;
+        height: 10px;
+        margin-top: -7px;
+        border-top: 3px solid $color;
+        border-right: 3px solid $color;
+        transform: rotate(45deg);
+    }
+}
+
+// ■■■■■■■■■■■■■■■■■■■■■■■ Shape ■■■■■■■■■■■■■■■■■■■■■■
+
+@mixin triangle {
+        width: 0; height: 0; 
+        position: relative;
+        border-left: 50px solid transparent; 
+        border-right: 50px solid transparent; 
+        border-bottom: 90px solid lightblue;
+      &::after{
+        content: ''; 
+        width: 0; height: 0; 
+        position: absolute; 
+        left: -40px; top: 14px;
+        z-index: 1;
+        border-left: 40px solid transparent; 
+        border-right: 40px solid transparent; 
+        border-bottom: 70px solid #fff;
+    }
+}
+@mixin circle {
+        width: 80px; height: 80px;
+        position: relative;
+        border-radius: 80px;
+        background: orangered;
+        z-index: 0;
+      &::after {
+        content:"";
+        width: 50px; height: 50px;
+        position: absolute;
+        top:15px; left: 15px;
+        z-index: 2;
+        border-radius: 50px;
+        background: white;
+    }
+}

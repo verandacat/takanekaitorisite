@@ -1,0 +1,422 @@
+@charset "UTF-8";
+/*! ====================================================
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+このCSSファイルはSassから生成されていますので
+編集しないように注意ください。
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+====================================================== */
+.bread {
+  margin-top: 20px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .bread {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #container #float-wrap {
+    display: none;
+    /*一時非表示*/
+  }
+}
+
+.formwrap {
+  display: block;
+  margin: 20px auto;
+}
+
+.formwrap .mtitle {
+  overflow: hidden;
+  padding: 10px;
+  font-weight: bold;
+  position: relative;
+  font-size: 120%;
+}
+
+#section01 .kekka {
+  text-align: left;
+  font-size: inherit;
+}
+
+#section01 .jyoken {
+  table-layout: fixed;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+#section01 .jyoken td {
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  border: #e94a4a solid 1px;
+}
+
+#section01 .jyoken th {
+  white-space: nowrap;
+  background-color: #fbd8d2;
+  color: #e94a4a;
+  font-weight: 600;
+  text-align: center;
+  width: 150px;
+  border: #e94a4a solid 1px;
+}
+
+#store-data .item-d1 {
+  width: 33%;
+}
+
+@media (max-width: 768px) {
+  #store-data .item-d1 {
+    padding: 20px !important;
+  }
+}
+
+#store-data .item-d1 a {
+  font-size: 1.2em;
+}
+
+#store-data .r-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #store-data .r-table {
+    margin-bottom: 30px;
+  }
+}
+
+#store-data .r-table a img {
+  max-height: 100px;
+  max-width: 100px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+@media (max-width: 768px) {
+  #store-data .r-table a img {
+    max-height: 120px;
+    max-width: 120px;
+  }
+}
+
+#store-data .r-table td {
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  #store-data .r-table td {
+    border: #e94a4a solid 1px;
+  }
+}
+
+#store-data .r-table td .kigou {
+  max-width: 30px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+}
+
+#store-data .r-table th {
+  padding: 5px;
+  margin: 0px auto;
+}
+
+@media (max-width: 768px) {
+  #store-data .r-table th {
+    border: #e94a4a solid 1px;
+  }
+}
+
+#store-data .r-table td.setumei {
+  text-align: left;
+}
+
+#store-data .r-table td.setumei_title1 {
+  white-space: nowrap;
+  background-color: #fbd8d2 !important;
+  color: #e94a4a;
+  font-weight: 600;
+}
+
+#store-data .r-table td.setumei_title2 {
+  white-space: nowrap;
+  color: #f3358f;
+  background-color: #fbd8d2 !important;
+  font-weight: 600;
+}
+
+/*** 並べ替え iphone ***/
+.select-box {
+  text-align: center;
+  font-size: inherit;
+}
+
+.select-box select {
+  color: #e94a4a;
+  width: 49%;
+  padding: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #e94a4a;
+  background: url(img/arrow.png) 95% 50% no-repeat, -webkit-linear-gradient(top, #ffffff 0%, #fbd8d2 100%);
+  background-size: 20px, 100%;
+  border-radius: 3px;
+  margin-bottom: 0.5em;
+}
+
+.select-box .sort_btn {
+  display: inline-block;
+  padding: 10px 0px 10px 0px;
+  text-decoration: none;
+  color: #e94a4a;
+  border: solid 1px #e94a4a;
+  border-radius: 3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#fbd8d2));
+  background: linear-gradient(top, #ffffff 0%, #fbd8d2 100%);
+  width: 22%;
+}
+
+.select-box .sort_btn .fas {
+  font-weight: 900;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.select-box .sort_btn:hover {
+  background: #e94a4a;
+  color: #ffffff;
+}
+
+/*** フォーム ***/
+#search-bx {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+#search-bx h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #search-bx {
+    width: 100%;
+  }
+}
+
+#search-bx table {
+  width: 70%;
+  text-align: left;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #search-bx table {
+    width: 100%;
+  }
+}
+
+#search-bx table tr {
+  text-align: center;
+}
+
+#search-bx select {
+  border: 2px solid lightsalmon;
+  outline: none;
+  background: floralwhite;
+  padding: 8px;
+  width: 99%;
+  margin: 0 4px 4px 0;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 4px beige;
+          box-shadow: inset 0 4px beige;
+}
+
+#search-bx input[type="submit"] {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: #e94a4a;
+  border-radius: 8px;
+  color: white;
+  padding: 4px 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#result .dropmenu {
+  width: 90%;
+  margin: 20px auto;
+  text-align: right;
+  padding: 2px 8px;
+}
+
+#result .dropmenu select {
+  width: auto;
+  background: none;
+  border: 1px solid #eee;
+  margin: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  #result .dropmenu {
+    margin: 10px auto;
+  }
+  #result .dropmenu select {
+    font-size: 10px;
+  }
+}
+
+#resultBlock {
+  text-align: center;
+}
+
+#resultBlock .t-link {
+  margin: 0 auto;
+}
+
+#resultBlock .t-link .btn {
+  width: 300px;
+  padding: 12px 0;
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  #resultBlock .t-link .btn {
+    width: 70%;
+  }
+}
+
+#resultBlock .resulttable,
+#resultBlock .resultpoint {
+  width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #resultBlock .resulttable,
+  #resultBlock .resultpoint {
+    width: 100%;
+  }
+}
+
+#resultBlock table.resulttable {
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+#resultBlock table.resulttable tr:first-child a {
+  font-size: 1.4rem;
+  color: #e94a4a;
+  padding: 13px;
+  display: block;
+  border-bottom: 4px solid;
+}
+
+#resultBlock table.resulttable td {
+  padding: 14px;
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  #resultBlock table.resulttable td {
+    padding: 6px;
+    vertical-align: top;
+  }
+}
+
+@media (max-width: 768px) {
+  #resultBlock table.resulttable a img {
+    width: 128px;
+    height: auto;
+  }
+}
+
+#resultBlock table.resultpoint {
+  font-size: 14px;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+@media (max-width: 768px) {
+  #resultBlock table.resultpoint {
+    font-size: 12px;
+  }
+}
+
+#resultBlock table.resultpoint th,
+#resultBlock table.resultpoint td {
+  padding: 8px;
+}
+
+#resultBlock table.resultpoint th {
+  background: #fab0a3;
+  width: 20%;
+}
+
+#resultBlock table.resultpoint td {
+  width: 80%;
+}
+
+#resultBlock table.resultpoint td img {
+  width: 17px;
+}
+
+.button,
+.kousiki_btn {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-align: center;
+  font-weight: bold;
+  background: #e94a4a;
+  border: 1px solid #e94a4a;
+  line-height: 1em;
+}
+
+.button {
+  padding: 0.8em;
+  margin: 10px;
+  background: #999;
+  border: 1px solid #4e4e4e;
+}
+
+.kousiki_btn {
+  padding: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .kousiki_btn {
+    width: 50%;
+  }
+}
+
+.button:hover,
+.kousiki_btn:hover {
+  background: #ffffff;
+  color: #e94a4a;
+}

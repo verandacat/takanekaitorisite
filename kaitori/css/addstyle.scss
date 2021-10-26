@@ -1,0 +1,441 @@
+@charset "UTF-8";
+// =====================================================
+// 追加SCSS
+// =====================================================
+
+/*! ====================================================
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+このCSSファイルはSassから生成されていますので
+編集しないように注意ください。
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+====================================================== */
+
+// @mixin名---------------------------------------------
+//  media, clearfix, txtBox, titleBox1, txt-link, rank-link, footer-link,
+// =====================================================
+// ■■■■■■■■■■■■■■■■■■■■■■■ メディアクエリー ■■■■■■■■■■■■■■■■■■■■■■
+@mixin media($width-media: 768px) {
+    @media (max-width: $width-media) {
+        @content;
+    }
+}
+
+// 幅関係の設定 ----------------------------------------------
+$width-base: 900px; //全体
+$width-content: 890px; //コンテンツ
+$table: 100% / 4 - 3;
+// マージン＆パディング設定 ----------------------------------------------
+$space-center: 0 auto;
+$space-0: 0;
+$space-10: 10px;
+$space-15: 15px;
+$space-20: 20px;
+$space-25: 25px;
+$space-30: 30px;
+$space-35: 35px;
+// フォントの設定 --------------------------------------------
+$font-base-pc: 17px; //PC基準になるフォントサイズ
+$font-base-sp: 16px; //SP基準になるフォントサイズ
+$font-small: 0.7em;
+$font-h1: 1.3em;
+$font-h2: 1.2em;
+$font-h3: 1.1em;
+$font-pp: 1.1em;
+$font-psp: 1em;
+$font: "Hiragino Kaku Gothic ProN",
+"メイリオ",
+sans-serif;
+// 色関係の設定 ----------------------------------------------
+//デコレーション関連
+$txt-bold: bold;
+$txt-under: underline;
+//カラー関連[任意]
+$base: #333;
+$yellow: #ffff66;
+$red: #cc0000;
+$white: #ffffff;
+$gray: rgba(gray, 0.3);
+$green: rgba(green, 0.8);
+//リンク先カラー関連[任意]
+$normal: #f00;
+$hover: #00f;
+//メインカラー
+$mcolor1: #fbd8d2;
+$mcolor2: #e94a4a;
+$mcolor3: #ffffff;
+.bread {
+    margin-top: $space-20;
+    text-align: left;
+    @include media {
+        margin-top: $space-0;
+    }
+}
+
+@include media {
+    #container {
+        #float-wrap {
+            display: none;
+            /*一時非表示*/
+        }
+    }
+}
+
+.formwrap {
+    display: block;
+    margin: 20px auto;
+    .mtitle {
+        overflow: hidden;
+        padding: 10px;
+        font-weight: bold;
+        position: relative;
+        font-size: 120%;
+    }
+    // .mtitle:before {
+    //   background-color: #fff;
+    //   border-radius: 50%;
+    //   content: "";
+    //   display: block;
+    //   opacity: 0.6;
+    //   position: absolute;
+    //   top: -20px;
+    //   left: 0px;
+    //   width: 200px; 
+    //   height: 200px;
+    // }
+    // .mtitle:after {
+    //   background-color: #fff; 
+    //   border-radius: 50%;
+    //   content: "";
+    //   display: block;
+    //   opacity: 0.6; 
+    //   position: absolute;
+    //   bottom: -50px;
+    //   left: 180px;
+    //   width: 100px;
+    //   height: 100px; 
+    // }
+}
+
+#section01 {
+    .kekka {
+        text-align: left;
+        font-size: inherit;
+    }
+    .jyoken {
+        table-layout: fixed;
+        width: 100%;
+        font-size: 0.8em;
+        td {
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+            border: $mcolor2 solid 1px;
+        }
+        th {
+            white-space: nowrap;
+            background-color: $mcolor1;
+            color: $mcolor2;
+            font-weight: 600;
+            text-align: center;
+            width: 150px;
+            border: $mcolor2 solid 1px;
+        }
+    }
+}
+
+#store-data {
+    .item-d1 {
+        width: 33%;
+        @include media {
+            padding: 20px!important;
+        }
+        a {
+            font-size: 1.2em;
+        }
+    }
+    .r-table {
+        table-layout: fixed;
+        width: 100%;
+        @include media {
+            margin-bottom: $space-30;
+        }
+        a img {
+            max-height: 100px;
+            max-width: 100px;
+            width: auto;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+            @include media {
+                max-height: 120px;
+                max-width: 120px;
+            }
+        }
+        td {
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+            @include media {
+                border: $mcolor2 solid 1px;
+            }
+            .kigou {
+                max-width: 30px;
+                max-height: 30px;
+                width: auto;
+                height: auto;
+            }
+        }
+        th {
+            padding: 5px;
+            margin: 0px auto;
+            @include media {
+                border: $mcolor2 solid 1px;
+            }
+        }
+        td.setumei {
+            text-align: left;
+        }
+        td.setumei_title1 {
+            white-space: nowrap;
+            background-color: $mcolor1 !important;
+            color: $mcolor2;
+            font-weight: 600;
+        }
+        td.setumei_title2 {
+            white-space: nowrap;
+            color: #f3358f;
+            background-color: $mcolor1 !important;
+            font-weight: 600;
+        }
+    }
+}
+
+
+/*** 並べ替え iphone ***/
+
+.select-box {
+    text-align: center;
+    font-size: inherit;
+    select {
+        color: $mcolor2;
+        width: 49%;
+        padding: 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 1px solid $mcolor2;
+        background: -moz-linear-gradient(top, $mcolor3 0%, $mcolor1 100%);
+        background: url(img/arrow.png) 95% 50% no-repeat, -webkit-linear-gradient(top, $mcolor3 0%, $mcolor1 100%);
+        background-size: 20px, 100%;
+        border-radius: 3px;
+        margin-bottom: 0.5em;
+    }
+    .sort_btn {
+        display: inline-block;
+        padding: 10px 0px 10px 0px;
+        text-decoration: none;
+        color: $mcolor2;
+        border: solid 1px $mcolor2;
+        border-radius: 3px;
+        transition: 0.4s;
+        background: -moz-linear-gradient(top, $mcolor3 0%, $mcolor1 100%);
+        background: -webkit-linear-gradient(top, $mcolor3 0%, $mcolor1 100%);
+        background: linear-gradient(top, $mcolor3 0%, $mcolor1 100%);
+        width: 22%;
+        .fas {
+            font-weight: 900;
+            margin-left: 5px;
+            font-size: 16px;
+        }
+        &:hover {
+            background: $mcolor2;
+            color: $mcolor3;
+        }
+    }
+}
+
+
+/*** フォーム ***/
+
+#search-bx {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9em;
+    h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    @include media {
+        width: 100%;
+    }
+    table {
+        width: 70%;
+        text-align: left;
+        margin: auto;
+        @include media {
+            width: 100%;
+        }
+        tr {
+            text-align: center;
+        }
+    }
+    select {
+        border: 2px solid lightsalmon;
+        outline: none;
+        background: floralwhite;
+        padding: 8px;
+        width: 99%;
+        margin: 0 4px 4px 0;
+        border-radius: 4px;
+        box-shadow: inset 0 4px beige;
+    }
+    input[type="submit"] {
+        border: none;
+        outline: none;
+        font-size: 0.9rem;
+        font-weight: bold;
+        background: #e94a4a;
+        border-radius: 8px;
+        color: white;
+        padding: 4px 18px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+
+// 結果ページ
+#result {
+    .dropmenu {
+        width: 90%;
+        margin: 20px auto;
+        text-align: right;
+        padding: 2px 8px;
+        select {
+            width: auto;
+            background: none;
+            border: 1px solid #eee;
+            margin: 0;
+            box-shadow: none;
+        }
+        @include media {
+            margin: 10px auto;
+            select {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+#resultBlock {
+    text-align: center;
+    .t-link {
+        margin: 0 auto;
+        .btn {
+            width: 300px;
+            @include media {
+                width: 70%;
+            }
+            padding: 12px 0;
+            font-size: 1.1em;
+        }
+    }
+    .resulttable,
+    .resultpoint {
+        width: 90%;
+        margin: auto;
+        @include media {
+            width: 100%;
+        }
+    }
+    table.resulttable {
+        border-radius: 30px;
+        font-size: 14px;
+        tr {
+            &:first-child {
+                a {
+                    font-size: 1.4rem;
+                    color: #e94a4a;
+                    padding: 13px;
+                    display: block;
+                    border-bottom: 4px solid;
+                }
+            }
+        }
+        td {
+            padding: 14px;
+            text-align: left;
+            font-size: 12px;
+            margin-bottom: 10px;
+            @include media {
+                padding: 6px;
+                vertical-align: top;
+            }
+        }
+        @include media {
+            a img {
+                width: 128px;
+                height: auto;
+            }
+        }
+    }
+    table.resultpoint {
+        font-size: 14px;
+        margin-top: 20px;
+        table-layout: fixed;
+        @include media {
+            font-size: 12px;
+        }
+        th,
+        td {
+            padding: 8px;
+        }
+        th {
+            background: rgb(250, 176, 163);
+            width: 20%;
+        }
+        td {
+            width: 80%;
+        }
+        td img {
+            width: 17px;
+        }
+    }
+}
+
+.button,
+.kousiki_btn {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: $mcolor3;
+    border-radius: 3px;
+    transition: 0.4s;
+    text-align: center;
+    font-weight: bold;
+    background: $mcolor2;
+    border: 1px solid $mcolor2;
+    line-height: 1em;
+}
+
+.button {
+    padding: 0.8em;
+    margin: 10px;
+    background: #999;
+    border: 1px solid #4e4e4e;
+}
+
+.kousiki_btn {
+    padding: 0.8em;
+    @include media {
+        width: 50%;
+    }
+}
+
+.button:hover,
+.kousiki_btn:hover {
+    background: $mcolor3;
+    color: $mcolor2;
+}

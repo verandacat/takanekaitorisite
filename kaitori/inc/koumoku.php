@@ -1,0 +1,123 @@
+<?php
+$list = array(
+   1 => array(
+      "name" => 'バイセル',
+      "url" => 'https://xn--tor46et59ao6w.com/kimono/link/buysell.php',
+      "img1" => './img/01_120x120.jpg',
+      "setumei" => '1枚からでも買取ＯＫ。全国対応で査定をしてくれる上に事前に電話相談ができるのはバイセルだけ！<br>「大体の値段だけでも事前に知りたい」というユーザーは多く、事前の電話相談が手軽で便利と評判です。<br>シミがあるなど傷んだ着物の買取も相談可能。買取した後、その場で現金を受け取れるバイセルは査定、買取価格、スピード全てにおいて満足度の高い着物買取店です。',
+      "campaign" => 'キャンペーンが入ります。',
+      "jyoken1" => '1',
+      "jyoken2" => '1',
+      "jyoken3" => '2',
+      "jyoken4" => '1',
+      "jyoken5" => '1'
+   ),
+   2 => array(
+      "name" => '買取プレミアム',
+      "url" => 'https://xn--tor46et59ao6w.com/kimono/link/kaitori.php',
+      "img1" => './img/02_120x120.jpg',
+      "setumei" => '２４時間電話受付で査定後その場での現金受け取りが可能です。<br>様々な着物に対応しており、帯だけの買取ができるのも嬉しい。',
+      "campaign" => 'キャンペーンが入ります。',
+      "jyoken1" => '1',
+      "jyoken2" => '2',
+      "jyoken3" => '1',
+      "jyoken4" => '2',
+      "jyoken5" => '2'
+   ),
+   3 => array(
+      "name" => 'ザ・ゴールド',
+      "url" => 'https://xn--tor46et59ao6w.com/kimono/link/gold.php',
+      "img1" => './img/03_120x120.jpg',
+      "setumei" => '全国対応はしていませんが、主要都市近辺のエリアでは素早い出張査定をお願いすることができます。<br>ＴＶＣＭも放映しており女性スタッフも多く在籍。今、人気が伸びている買取サービスです。',
+      "campaign" => 'キャンペーンが入ります。',
+      "jyoken1" => '1',
+      "jyoken2" => '2',
+      "jyoken3" => '3',
+      "jyoken4" => '2',
+      "jyoken5" => '2'
+   ),
+   4 => array(
+      "name" => '福ちゃん',
+      "url" => 'https://xn--tor46et59ao6w.com/kimono/link/huku.php',
+      "img1" => './img/04_120x120.jpg',
+      "setumei" => '着物・和服・帯・和装小物類、着物関連なら、どこよりも高く買取る自信があります。<br>テレビCM・ラジオCMなどの地上波メディアにも掲載されている人気の店舗です。',
+      "campaign" => 'キャンペーンが入ります。',
+      "jyoken1" => '1',
+      "jyoken2" => '3',
+      "jyoken3" => '2',
+      "jyoken4" => '2',
+      "jyoken5" => '2'
+   ),
+   5 => array(
+      "name" => '買取Piece',
+      "url" => 'https://xn--tor46et59ao6w.com/kimono/link/piece.php',
+      "img1" => './img/05_120x120.jpg',
+      "setumei" => 'お申込みから最短30分でお伺いします。<br>日本全国、手数料・キャンセル料一切かからず完全無料で宅配買取をおこないます。',
+      "campaign" => 'キャンペーンが入ります。',
+      "jyoken1" => '1',
+      "jyoken2" => '1',
+      "jyoken3" => '2',
+      "jyoken4" => '2',
+      "jyoken5" => '4'
+   ),
+   6 => array(
+      "name" => 'ヤマトク',
+      "url" => 'https://xn--tor46et59ao6w.com/kimono/link/yama.php',
+      "img1" => './img/06_120x120.jpg',
+      "setumei" => '買取対応数が豊富です。お着物関連品であれば基本的に【なんでも】買い取ります。<br>無料で梱包キット(ダンボール等資材一式)をお送りします。しかもその際面倒な会員登録は【不要】です。',
+      "campaign" => 'キャンペーンが入ります。',
+      "jyoken1" => '1',
+      "jyoken2" => '2',
+      "jyoken3" => '4',
+      "jyoken4" => '4',
+      "jyoken5" => '1'
+   ),
+   7 => array(
+      "name" => '久屋',
+      "url" => 'https://xn--tor46et59ao6w.com/kimono/link/hisa.php',
+      "img1" => './img/07_120x120.jpg',
+      "setumei" => '買取対応数が豊富です。和装関係のものでしたら、バッグや草履、かんざしもまとめてお送りください。<br>無料で梱包キット(ダンボール等資材一式)をお送りします。<br>しかもその際面倒な会員登録は【不要】です。',
+      "campaign" => 'キャンペーンが入ります。',
+      "jyoken1" => '1',
+      "jyoken2" => '2',
+      "jyoken3" => '4',
+      "jyoken4" => '4',
+      "jyoken5" => '3'
+   ),
+   8 => array(
+      "name" => 'おたからや',
+      "url" => 'https://xn--tor46et59ao6w.com/kimono/link/otakara.php',
+      "img1" => './img/08_120x120.jpg',
+      "setumei" => 'さらに、買取店舗数全国ナンバーワンであり、信頼度は抜群です。買取前の査定は、完全無料。<br>万が一査定額に満足できずに買取キャンセルとなった場合でも、キャンセル料や返送料は一切かかりません。',
+      "campaign" => 'キャンペーンが入ります。',
+      "jyoken1" => '2',
+      "jyoken2" => '3',
+      "jyoken3" => '4',
+      "jyoken4" => '4',
+      "jyoken5" => '2'
+   ),
+   9 => array(
+      "name" => '買取王子',
+      "url" => 'https://xn--tor46et59ao6w.com/kimono/link/',
+      "img1" => './img/09_120x120.jpg',
+      "setumei" => '「送料無料の宅配便で、自宅に居ながらリサイクルができる」ラクチンお得な宅配買取サービス。',
+      "campaign" => 'キャンペーンが入ります。',
+      "jyoken1" => '2',
+      "jyoken2" => '3',
+      "jyoken3" => '4',
+      "jyoken4" => '4',
+      "jyoken5" => '4'
+   ),
+   10 => array(
+      "name" => 'ウリドキ',
+      "url" => 'https://xn--tor46et59ao6w.com/kimono/link/',
+      "img1" => './img/10_120x120.jpg',
+      "setumei" => '各店舗の買取価格を比較した上でより高く売ることが可能。',
+      "campaign" => 'キャンペーンが入ります。',
+      "jyoken1" => '2',
+      "jyoken2" => '4',
+      "jyoken3" => '4',
+      "jyoken4" => '4',
+      "jyoken5" => '3'
+   ),
+);
